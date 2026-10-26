@@ -40,7 +40,7 @@ mainNav.querySelectorAll('a').forEach((link) => {
 setFilter('todas');
 
 const SUPABASE_URL = 'https://xsycxwihmcmsaoykvgxn.supabase.co';
-const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_ZRh43BSCmWOGTLOZmtq8RA_00PuInzA';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_ZRh43BSCWmOGTLOZmtq8RA_00PuInzA';
 const signupForm = document.querySelector('#signup-form');
 const formStatus = document.querySelector('#form-status');
 const submitButton = signupForm.querySelector('button[type="submit"]');
