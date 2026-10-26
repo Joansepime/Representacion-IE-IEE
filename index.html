@@ -31,7 +31,7 @@
         <p class="eyebrow light"><span></span> Ingeniería Eléctrica y Electrónica</p>
         <h1>La ingeniería<br>se construye <em>en equipo.</em></h1>
         <p class="hero-lead">Una representación que conecta lo que aprendemos con lo que hacemos, y abre caminos para avanzar en la carrera.</p>
-        <a class="button button-cream" href="#propuestas">Explora las propuestas <span aria-hidden="true">↓</span></a>
+        <div class="hero-actions"><a class="button button-cream" href="#propuestas">Explora las propuestas <span aria-hidden="true">↓</span></a><a class="button button-yellow" href="#contacto">Recibe el plan <span aria-hidden="true">↘</span></a></div>
       </div>
       <div class="hero-art" aria-label="Representación gráfica de las planchas uno y cuatro">
         <div class="bursts"><span class="burst burst-one">#1</span><span class="burst burst-four">#4</span></div>
@@ -92,16 +92,11 @@
       </div>
     </section>
 
-    <section class="signup-section" id="contacto">
+    <section class="signup-section signup-feature" id="contacto">
       <div class="section-wrap signup-grid">
-        <div class="signup-copy">
-          <p class="section-kicker"><span>04</span> RECIBE EL PLAN</p>
-          <h2>Te compartimos<br><em>todo el programa.</em></h2>
-          <p>Déjanos tus datos y te enviaremos el plan de desarrollo y las propuestas al contacto que registres.</p>
-          <div class="raffle-note"><span class="raffle-star" aria-hidden="true">✳</span><span><b>También participas en el sorteo</b><small>2 Raspberry Pi y 1 kit de electrónica para las personas registradas.</small></span></div>
-        </div>
         <form class="signup-form" id="signup-form">
-          <div class="form-heading"><span>FORMULARIO DE REGISTRO</span><span>PLANCHA #1 + #4</span></div>
+          <div class="form-heading"><span>REGISTRO + SORTEO</span><span>PLANCHA #1 + #4</span></div>
+          <h1 class="signup-form-title">Recibe el plan<br>y participa.</h1>
           <label for="nombre">Nombre completo</label>
           <input id="nombre" name="nombre" type="text" autocomplete="name" maxlength="120" placeholder="¿Cómo te llamas?" required>
           <label for="telefono">Número de contacto</label>
@@ -116,7 +111,24 @@
           <div class="honeypot" aria-hidden="true"><label for="sitio">Deja este campo vacío</label><input id="sitio" name="sitio" type="text" tabindex="-1" autocomplete="off"></div>
           <button class="button button-yellow form-submit" type="submit"><span>Enviar mis datos</span><span aria-hidden="true">↗</span></button>
           <p class="form-status" id="form-status" aria-live="polite" role="status"></p>
+          <p class="form-privacy">Al enviar, tus datos se guardan en Supabase para este registro.</p>
         </form>
+        <div class="signup-copy">
+          <p class="section-kicker"><span>01</span> PLANCHA #1 + #4 · INGENIERÍA ELÉCTRICA Y ELECTRÓNICA</p>
+          <h2>Una idea clara.<br><em>Más ingeniería.</em></h2>
+          <p>Déjanos tus datos y te compartiremos todo el plan de desarrollo y las propuestas.</p>
+          <div class="sticker-row" aria-label="Premios del sorteo">
+            <figure class="prize-sticker sticker-pi">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Ilustración de una placa Raspberry Pi"><path d="M25 19 95 15 104 81 30 86Z" fill="#21895d" stroke="#1e1e1e" stroke-width="4"/><path d="m33 29 54-3 3 44-51 4Z" fill="#f5e7ca" stroke="#1e1e1e" stroke-width="3"/><rect x="48" y="39" width="29" height="26" rx="3" fill="#1e1e1e"/><path d="M50 46h25M56 39v-7m13 7v-7m-13 33v8m13-8v8" stroke="#f7bb03" stroke-width="3"/><path d="M18 28v39m7-38v40m70-56v-8m7 8v-8" stroke="#f7bb03" stroke-width="3"/><circle cx="42" cy="34" r="3" fill="#be1b20"/><circle cx="83" cy="70" r="3" fill="#be1b20"/></svg>
+              <figcaption>2 × Raspberry Pi</figcaption>
+            </figure>
+            <figure class="prize-sticker sticker-kit">
+              <svg viewBox="0 0 120 100" role="img" aria-label="Ilustración de un kit de componentes electrónicos"><path d="m19 28 76-7 8 58-76 8Z" fill="#f7bb03" stroke="#1e1e1e" stroke-width="4"/><path d="m30 37 52-5 5 37-52 5Z" fill="#fdf9f3" stroke="#1e1e1e" stroke-width="3"/><path d="m40 50 12-1 3 11-12 1Zm27-6 10-1 2 9-10 1Z" fill="#be1b20" stroke="#1e1e1e" stroke-width="2"/><path d="m34 25 3-10m12 9 2-11m14 10 2-11m14 10 2-11m15 26 10-2m-8 16 11-2m-9 16 10-2" stroke="#1e1e1e" stroke-width="3"/><path d="M44 49c-9-14-16 7 3 17m30-22c16-15 21 11 0 20" fill="none" stroke="#21895d" stroke-width="3"/></svg>
+              <figcaption>1 kit de electrónica</figcaption>
+            </figure>
+          </div>
+          <div class="raffle-note"><span class="raffle-star" aria-hidden="true">✳</span><span><b>Sorteamos 3 premios</b><small>Dos Raspberry Pi y un kit de electrónica entre las personas registradas.</small></span></div>
+        </div>
       </div>
     </section>
 
