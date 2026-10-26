@@ -8,6 +8,7 @@
   <title>Representación Eléctrica y Electrónica | Plancha #1 + #4</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="team.css">
+  <link rel="stylesheet" href="signup.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -88,6 +89,35 @@
         <article class="proposal-card" data-axis="formacion"><div class="proposal-top"><span>06 / MALLA</span><span class="proposal-icon">⌁</span></div><h3>Revisar prerrequisitos</h3><p>Promover ajustes a prerrequisitos que puedan limitar innecesariamente el avance, especialmente en los primeros semestres.</p><details><summary>Un ejemplo del programa</summary><ul><li>Revisar casos como Cálculo Diferencial cuando sea prerrequisito de asignaturas sin necesidad real.</li></ul></details><div class="card-foot">EJE 02 <span>FORMACIÓN</span></div></article>
         <article class="proposal-card" data-axis="formacion"><div class="proposal-top"><span>07 / PREPARACIÓN</span><span class="proposal-icon">◷</span></div><h3>Preparación de las clases</h3><p>Proponer una plataforma virtual donde cada profesor pueda presentar su asignatura antes del inicio de clases.</p><details><summary>¿Qué podría incluir?</summary><ul><li>Temas que se aprenderán y conocimientos previos útiles.</li><li>El enfoque del profesor y aplicaciones de interés.</li><li>Recursos para preparar temas y reducir repeticiones entre asignaturas.</li></ul></details><div class="card-foot">EJE 02 <span>FORMACIÓN</span></div></article>
         <article class="proposal-card" data-axis="formacion"><div class="proposal-top"><span>08 / CONTENIDOS</span><span class="proposal-icon">⤢</span></div><h3>Conectar y ajustar contenidos</h3><p>Impulsar el diálogo sobre contenidos compartidos entre asignaturas para acercarlos a aplicaciones de ingeniería y evitar redundancias.</p><details><summary>Asignaturas para conversar</summary><ul><li>Mecánica para Ingeniería.</li><li>Fundamentos de Materiales para Ingeniería.</li><li>Variable Compleja.</li></ul></details><div class="card-foot">EJE 02 <span>FORMACIÓN</span></div></article>
+      </div>
+    </section>
+
+    <section class="signup-section" id="contacto">
+      <div class="section-wrap signup-grid">
+        <div class="signup-copy">
+          <p class="section-kicker"><span>04</span> RECIBE EL PLAN</p>
+          <h2>Te compartimos<br><em>todo el programa.</em></h2>
+          <p>Déjanos tus datos y te enviaremos el plan de desarrollo y las propuestas al contacto que registres.</p>
+          <div class="raffle-note"><span class="raffle-star" aria-hidden="true">✳</span><span><b>También participas en el sorteo</b><small>2 Raspberry Pi y 1 kit de electrónica para las personas registradas.</small></span></div>
+        </div>
+        <form class="signup-form" id="signup-form">
+          <div class="form-heading"><span>FORMULARIO DE REGISTRO</span><span>PLANCHA #1 + #4</span></div>
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" maxlength="120" placeholder="¿Cómo te llamas?" required>
+          <label for="telefono">Número de contacto</label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="Tu teléfono" required>
+          <label for="carrera">Carrera</label>
+          <select id="carrera" name="carrera" required>
+            <option value="" selected disabled>Selecciona tu carrera</option>
+            <option value="Ingeniería Eléctrica">Ingeniería Eléctrica</option>
+            <option value="Ingeniería Electrónica">Ingeniería Electrónica</option>
+          </select>
+          <label class="consent-row"><input name="consentimiento" type="checkbox" required><span>Autorizo el uso de mi nombre, teléfono y carrera para recibir el plan de desarrollo y las propuestas, y para contactarme sobre el sorteo.</span></label>
+          <div class="honeypot" aria-hidden="true"><label for="sitio">Deja este campo vacío</label><input id="sitio" name="sitio" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="button button-yellow form-submit" type="submit"><span>Enviar mis datos</span><span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" aria-live="polite" role="status"></p>
+          <p class="form-privacy">Al enviar, tus datos se guardan en Supabase para este registro.</p>
+        </form>
       </div>
     </section>
 
